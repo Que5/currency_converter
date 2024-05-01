@@ -1,0 +1,51 @@
+
+# Online Python - IDE, Editor, Compiler, Interpreter
+
+print("Convert your currencies")
+
+dollar_to_rand = 18.79
+rand_to_dollar = 0.053
+euro_to_rand = 20
+rand_to_euro = 0.050
+pound_to_rand = 23.41
+rand_to_pound = 0.043
+
+def calculations():
+    
+    what_is_being_converted = input("What are you converting? (rand to dollar press 1, dollar to rand press 2, rand to Euro press 3, Euro to rand press 4, rand to pound press 5 and pound to rand press 6:)")
+    if int(what_is_being_converted) == 1:
+        amount = input("How much do you want to convert?")
+        return int(amount) * rand_to_dollar
+        
+    elif int(what_is_being_converted) == 2:
+        amount = input("How much do you want to convert?")
+        return int(amount) * dollar_to_rand
+        
+    elif int(what_is_being_converted) == 3:
+        amount = input("How much do you want to convert?")
+        return int(amount) * rand_to_euro
+        
+    elif int(what_is_being_converted) == 4:
+        amount = input("How much do you want to convert?")
+        return int(amount) * euro_to_rand
+        
+    elif int(what_is_being_converted) == 5:
+        amount = input("How much do you want to convert?")
+        return int(amount) * rand_to_pound
+        
+    elif int(what_is_being_converted) == 6:
+        amount = input("How much do you want to convert?")
+        return int(amount) * pound_to_rand
+        
+total = calculations()
+print(F"The total is {total}!")
+        
+    
+        
+    
+    
+    
+   
+    
+
+    
